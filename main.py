@@ -149,6 +149,8 @@ def main():
         if st.button("Get AI Analysis"):
             with st.spinner("Analyzing data summary with ChatGPT..."):
                 try:
+                    summary = summarize_data(file)
+                    prompt = prepare_prompt(summary)
                     analysis = ask_chatgpt(f"Analyze this data summary and provide insights:\n{prompt}")
                     st.subheader("ChatGPT Analysis")
                     st.write(analysis)
