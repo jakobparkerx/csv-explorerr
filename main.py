@@ -152,7 +152,7 @@ def main():
                     summary = summarize_data(file)
                     prompt = prepare_prompt(summary)
                     analysis = ask_chatgpt(f"Analyze this data summary and provide insights:\n{prompt}")
-                    st.subheader("ChatGPT Analysis")
+                    st.subheader("AI Analysis")
                     st.write(analysis)
                 except Exception as e:
                     st.error(f"Error calling OpenAI API: {e}")
