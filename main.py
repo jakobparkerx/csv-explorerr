@@ -72,7 +72,7 @@ def main():
     col1, col2, col3 = st.columns([1, 20, 1])
     with col2:
         st.markdown(
-            "<h1 style='text-align: center;'>📊 CSV Column Cleaner</h1>",
+            "<h1 style='text-align: center;'>📊 CSV Explorer</h1>",
             unsafe_allow_html=True
         )
     st.info("A simple tool to clean and analyze your CSV files. Upload a CSV file, select a column, and view its statistics. You can also edit the data directly in the app, and then redownload it as a CSV.")
