@@ -53,7 +53,7 @@ def summarize_data(file):
 
 
 def prepare_prompt(summary):
-    return json.dumps(summary, indent=2)
+    return json.dumps(summary, indent=2, default=str)
 
 def ask_chatgpt(prompt_text):
     response = client.chat.completions.create(
