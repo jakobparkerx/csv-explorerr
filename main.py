@@ -75,7 +75,7 @@ def main():
             "<h1 style='text-align: center;'>📊 CSV Explorer</h1>",
             unsafe_allow_html=True
         )
-    st.info("A simple tool to clean and analyze your CSV files. Upload a CSV file, select a column, and view its statistics. You can also edit the data directly in the app, and then redownload it as a CSV.")
+    st.info("A simple tool to clean and analyse your CSV files, powered by Open AI's API. Upload a CSV file, select a column, and view its statistics. You can also edit the data directly in the app, and then redownload it as a CSV.")
 
     uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 
